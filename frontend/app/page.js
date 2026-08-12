@@ -43,7 +43,7 @@ export default function Home() {
       <header className="w-full bg-white border-b border-slate-200 shadow-sm pl-12 py-4">
         <div className=" flex items-center gap-3">
           <Image
-            src="../public/images/logo.png" 
+            src="/images/logo.png" 
             alt="Kaj Baki Logo" 
             width={80} 
             height={100}
