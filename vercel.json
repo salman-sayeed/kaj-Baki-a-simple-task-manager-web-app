@@ -1,14 +1,23 @@
 {
-  "Services": {
+  "services": {
     "frontend": {
-      "root": "frontend",
-      "routePrefix": "/",
+      "root": "frontend/",
       "framework": "nextjs"
     },
     "backend": {
-      "root": "backend",
-      "routePrefix": "/_backend",
+      "root": "backend/",
+      "entrypoint": "server.js",
       "framework": "express"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": { "service": "backend" }
+    },
+    {
+      "source": "/(.*)",
+      "destination": { "service": "frontend" }
+    }
+  ]
 }
