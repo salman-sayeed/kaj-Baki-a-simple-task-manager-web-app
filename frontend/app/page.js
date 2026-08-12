@@ -1,6 +1,5 @@
 'use client';
 
-import logoImg from '../public/images/logo.png';
 import { useState, useEffect } from 'react';
 import TaskForm from '../components/TaskForm';
 import TaskCard from '../components/TaskCard';
@@ -45,14 +44,14 @@ export default function Home() {
       <header className="w-full bg-white border-b border-slate-200 shadow-sm pl-12 py-4">
         <div className=" flex items-center gap-3">
           <Image
-            src="/images/logo.png" 
-            alt="Kaj Baki Logo" 
-            width={80} 
-            height={0}
-            style={{ height: 'auto' }}
-            priority
-            className="object-contain"
-          />
+  src="https://imgur.com/RYFfCBy.png" 
+  alt="Kaj Baki Logo" 
+  width={80} 
+  height={80}
+  unoptimized
+  priority
+  className="object-contain"
+/>
           <h1 className="text-4xl font-black text-slate-900 tracking-tight">
             Kaj Baki
           </h1>
