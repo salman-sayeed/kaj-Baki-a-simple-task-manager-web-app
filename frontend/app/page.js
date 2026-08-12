@@ -1,9 +1,11 @@
 'use client';
 
+import logoImg from '../public/images/logo.png';
 import { useState, useEffect } from 'react';
 import TaskForm from '../components/TaskForm';
 import TaskCard from '../components/TaskCard';
 import Image from 'next/image';
+
 
 export default function Home() {
   const [tasks, setTasks] = useState([]);
@@ -12,7 +14,7 @@ export default function Home() {
   const fetchTasks = async () => {
     try {
       const res = await fetch('/api/tasks');
-const data = await res.json();
+      const data = await res.json();
       setTasks(data);
     } catch (error) {
       console.error('Error fetching tasks:', error);
@@ -46,10 +48,11 @@ const data = await res.json();
             src="/images/logo.png" 
             alt="Kaj Baki Logo" 
             width={80} 
-            height={100}
+            height={0}
+            style={{ height: 'auto' }}
             priority
             className="object-contain"
-          /> 
+          />
           <h1 className="text-4xl font-black text-slate-900 tracking-tight">
             Kaj Baki
           </h1>

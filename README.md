@@ -3,7 +3,8 @@
 # Kaj Baki - A Simple Task Manager Web-App
 A simple full-stack task manager web app built with Next.js, Node.js, Express and MongoDB Atlas.
 
-Live Demo: https://kaj-baki-a-simple-task-manager-web.vercel.app/
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-1D4ED8?style=for-the-badge)](httpscd://kaj-baki-a-simple-task-manager-web.vercel.app/)
+
 
 ---
 
