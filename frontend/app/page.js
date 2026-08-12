@@ -44,14 +44,14 @@ export default function Home() {
       <header className="w-full bg-white border-b border-slate-200 shadow-sm pl-12 py-4">
         <div className=" flex items-center gap-3">
           <Image
-  src="https://imgur.com/RYFfCBy.png" 
-  alt="Kaj Baki Logo" 
-  width={80} 
-  height={80}
-  unoptimized
-  priority
-  className="object-contain"
-/>
+            src="https://imgur.com/RYFfCBy.png" 
+            alt="Kaj Baki Logo" 
+            width={80} 
+            height={80}
+            unoptimized
+            priority
+            className="object-contain"
+          />
           <h1 className="text-4xl font-black text-slate-900 tracking-tight">
             Kaj Baki
           </h1>

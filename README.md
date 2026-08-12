@@ -1,10 +1,10 @@
 <img src="https://imgur.com/pY8sKiF.png" height="200">
 
 # Kaj Baki - A Simple Task Manager Web-App
+
 A simple full-stack task manager web app built with Next.js, Node.js, Express and MongoDB Atlas.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-1D4ED8?style=for-the-badge)](httpscd://kaj-baki-a-simple-task-manager-web.vercel.app/)
-
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-1D4ED8?style=for-the-badge)](https://kaj-baki-a-simple-task-manager-web.vercel.app/)
 
 ---
 
@@ -28,6 +28,7 @@ A simple full-stack task manager web app built with Next.js, Node.js, Express an
 ---
 
 ## 💠 Project Structure
+
 ```bash
 kaj-baki/
 ├── backend/
@@ -56,6 +57,7 @@ kaj-baki/
 ## 💠 Running Locally
 
 ### Prerequisites
+
 - [Node.js](https://nodejs.org/en/download) installed
 - A [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database) account with a cluster ready
 - [Git](https://git-scm.com/install/) installed
@@ -75,11 +77,13 @@ npm install
 ```
 
 Create a `.env` file inside the `backend/` folder:
+
 ```bash
 PORT=5001
 
 MONGODB_URI=your_mongodb_atlas_connection_string_here
 ```
+
 Start the backend server:
 
 ```bash
@@ -87,6 +91,7 @@ node server.js
 ```
 
 You should see:
+
 ```bash
 Connected to MongoDB Atlas
 
@@ -103,7 +108,8 @@ npm install
 ```
 
 Create a `.env.local` file inside the `frontend/` folder:
-```bash 
+
+```bash
 NEXT_PUBLIC_API_URL=http://localhost:5001
 ```
 
@@ -121,15 +127,15 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Backend (`backend/.env`)
 
-| Variable | Description |
-|----------|-------------|
-| `PORT` | Port the Express server runs on (e.g. `5001`) |
-| `MONGODB_URI` | Your MongoDB Atlas connection string |
+| Variable      | Description                                   |
+| ------------- | --------------------------------------------- |
+| `PORT`        | Port the Express server runs on (e.g. `5001`) |
+| `MONGODB_URI` | Your MongoDB Atlas connection string          |
 
 ### Frontend (`frontend/.env.local`)
 
-| Variable | Description |
-|----------|-------------|
+| Variable              | Description                                                                                     |
+| --------------------- | ----------------------------------------------------------------------------------------------- |
 | `NEXT_PUBLIC_API_URL` | URL of the backend API (e.g. `http://localhost:5001` for local, your Render URL for production) |
 
 ---
