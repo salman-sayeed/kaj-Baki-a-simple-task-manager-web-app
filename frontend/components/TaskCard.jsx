@@ -11,7 +11,7 @@ export default function TaskCard({ task, onStatusUpdate, onDelete }) {
   const handleStatusChange = async (e) => {
     const newStatus = e.target.value;
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/tasks/${task._id}`, {
+      const res = await fetch(`/api/tasks/${task._id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: newStatus }),
@@ -25,7 +25,7 @@ export default function TaskCard({ task, onStatusUpdate, onDelete }) {
 
   const handleDelete = async () => {
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/tasks/${task._id}`, {
+      await fetch(`/api/tasks/${task._id}`, {
         method: 'DELETE',
       });
       onDelete(task._id);

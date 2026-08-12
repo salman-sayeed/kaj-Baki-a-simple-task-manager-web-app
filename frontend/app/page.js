@@ -11,8 +11,8 @@ export default function Home() {
 
   const fetchTasks = async () => {
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/tasks`);
-      const data = await res.json();
+      const res = await fetch('/api/tasks');
+const data = await res.json();
       setTasks(data);
     } catch (error) {
       console.error('Error fetching tasks:', error);
